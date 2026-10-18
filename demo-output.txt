@@ -1,0 +1,11 @@
+PASS successful order total and stock
+PASS cancel restores stock, payment and shipment
+PASS repeated cancellation does not release twice
+PASS declined payment releases reservation
+PASS shipping failure refunds payment and releases stock
+PASS insufficient stock changes no item
+PASS unknown order rejected
+PASS empty cart rejected
+PASS invalid customer rejected
+PASS negative quantity rejected
+SUMMARY: 10/10 PASS

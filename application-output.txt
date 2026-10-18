@@ -1,0 +1,4 @@
+LOCAL SIMULATION - no real payment, shipment or email
+OrderResult[orderId=ORDER-1, total=3300.00, trackingNumber=DEMO-SHIP-ORDER-1, status=PLACED]
+OrderResult[orderId=ORDER-1, total=3300.00, trackingNumber=, status=CANCELLED]
+Cannot place order: Payment declined
