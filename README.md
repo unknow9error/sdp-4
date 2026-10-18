@@ -1,8 +1,8 @@
 # Assignment 4 Facade Pattern study reference
 
 Prepared for Nurdaulet Mukhitden, SE-2537. Option B: Online Order Processing.
-AI-generated reference for learning. See AI_ASSISTANCE.md.
-GitHub repository URL: not published. Nothing was uploaded to LMS.
+AI-generated reference for learning.
+GitHub repository URL: https://github.com/unknow9error/sdp-4. Nothing was uploaded to LMS.
 
 ## Build and run
 
@@ -34,11 +34,11 @@ by advanced clients; they contain no facade references.
 
 report.pdf includes an English explanation, UML, five annotated Clean Code excerpts
 and verification. uml.puml is editable source. demo-output.txt is actual check output.
-application-output.txt is actual Main output. DEFENSE.md contains study prompts.
+application-output.txt is actual Main output.
 
 ## Remaining course requirements
 
 Deadline: 18 October 2026 at 23:59. Defense: last practice of Week 7.
-A GitHub URL and mandatory personal defense are not supplied by this local folder.
+The repository URL is above; a mandatory personal defense remains.
 The course restricts AI to examples and clarification, so do not present this
 reference as independently authored code or report. No multi-day history is claimed.
