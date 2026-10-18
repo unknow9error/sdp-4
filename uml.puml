@@ -1,0 +1,32 @@
+@startuml
+class Main
+class OrderFacade {
+  + placeOrder(Cart, Customer, PaymentChoice) : OrderResult
+  + cancelOrder(String) : OrderResult
+  - compensate(String) : void
+}
+class InventoryService {
+  + reserve(String, Cart) : BigDecimal
+  + release(String) : void
+  + available(String) : int
+}
+class PaymentProcessor {
+  + charge(String, BigDecimal, Decision) : void
+  + refund(String) : void
+  + isCharged(String) : boolean
+}
+class ShippingService {
+  + schedule(String, Customer) : String
+  + cancel(String) : void
+  + isScheduled(String) : boolean
+}
+class NotificationService {
+  + record(Customer, OrderResult) : void
+  + messages() : List<String>
+}
+Main ..> OrderFacade
+OrderFacade o-- InventoryService
+OrderFacade o-- PaymentProcessor
+OrderFacade o-- ShippingService
+OrderFacade o-- NotificationService
+@enduml
