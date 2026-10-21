@@ -5,7 +5,6 @@ public class Main {
         OrderFacade shop = new OrderFacade();
         Customer customer = new Customer("Demo Student", "student@example.invalid", "Demo address");
         Cart cart = new Cart(Map.of("notebook", 2, "pen", 3));
-        System.out.println("LOCAL SIMULATION - no real payment, shipment or email");
         OrderResult placed = shop.placeOrder(cart, customer, OrderFacade.PaymentChoice.ACCEPTED);
         System.out.println(placed);
         System.out.println(shop.cancelOrder(placed.orderId()));
