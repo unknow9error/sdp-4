@@ -2,7 +2,6 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-// A deterministic local simulation; no payment network or credentials.
 public class PaymentProcessor {
     public enum Decision { APPROVE, DECLINE }
     private final Map<String, BigDecimal> charges = new HashMap<>();

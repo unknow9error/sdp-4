@@ -17,7 +17,6 @@ public class InventoryService {
     public BigDecimal reserve(String orderId, Cart cart) {
         if (reservations.containsKey(orderId)) throw new OrderException("Duplicate reservation");
         BigDecimal total = BigDecimal.ZERO;
-        // Validate the entire cart before changing any stock.
         for (var item : cart.quantities().entrySet()) {
             if (!prices.containsKey(item.getKey())
                     || available(item.getKey()) < item.getValue()) {

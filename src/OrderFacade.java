@@ -19,7 +19,6 @@ public class OrderFacade {
                 new ShippingService(), new NotificationService());
     }
 
-    // Composition root for advanced clients and controlled failure tests.
     public OrderFacade(InventoryService inventory, PaymentProcessor payments,
                        ShippingService shipping, NotificationService notifications) {
         this.inventory = Objects.requireNonNull(inventory);
